@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://nus-test.github.io/'>TEST Lab</a>, National University of Singapore.
+subtitle: Singapore
 
 profile:
   align: right
