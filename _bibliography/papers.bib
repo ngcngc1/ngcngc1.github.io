@@ -3,70 +3,32 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+@inproceedings{sgfuzz,
+  author = {Ba, Jinsheng and B{\"o}hme, Marcel and Mirzamomen, Zahra and Roychoudhury, Abhik}, 
+  title = {Stateful Greybox Fuzzing},
+  bibtex_show = {true},
+  pdf = {USENIX22.pdf},
+  code = {https://github.com/bajinsheng/SGFuzz},
+  arxiv = {2204.02545},
+  booktitle = {Proceedings of the 31st USENIX Security Symposium},
+  series = {USENIX SECURITY},
+  year = {2022},
+  numpages = {18},
+  abstract = {Many protocol implementations are reactive systems, where the protocol process is in continuous interaction with other processes and the environment. If a bug can be exposed only in a certain state, a fuzzer needs to provide a specific sequence of events as inputs that would take protocol into this state before the bug is manifested. We call these bugs as "stateful" bugs. Usually, when we are testing a protocol implementation, we do not have a detailed formal specification of the protocol to rely upon. Without knowledge of the protocol, it is inherently difficult for a fuzzer to discover such stateful bugs. A key challenge then is to cover the state space without an explicit specification of the protocol.
+  In this work, we posit that manual annotations for state identification can be avoided for stateful protocol fuzzing. Specifically, we rely on a programmatic intuition that the state variables used in protocol implementations often appear in enum type variables whose values (the state names) come from named constants. In our analysis of the Top-50 most widely used open-source protocol implementations, we found that every implementation uses state variables that are assigned named constants (with easy to comprehend names such as INIT, READY) to represent the current state. In this work, we propose to automatically identify such state variables and track the sequence of values assigned to them during fuzzing to produce a "map" of the explored state space.
+  Our experiments confirm that our stateful fuzzer discovers stateful bugs twice as fast as the baseline greybox fuzzer that we extended. Starting from the initial state, our fuzzer exercises one order of magnitude more state/transition sequences and covers code two times faster than the baseline fuzzer. Several zero-day bugs in prominent protocol implementations were found by our fuzzer, and 8 CVEs have been assigned.}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@misc{2204.02773,
+  Author = {Jinsheng Ba and Gregory J. Duck and Abhik Roychoudhury},
+  Title = {Fast Fuzzing for Memory Errors},
+  bibtex_show = {true},
+  pdf = {2204.02773.pdf},
+  code = {https://github.com/bajinsheng/ReZZan},
+  arxiv = {2204.02773}
+  year = {2022},
+  eprint = {arXiv:2204.02773},
+  numpages = {14},
+  abstract = {Greybox fuzzing is a proven effective testing method for the detection of security vulnerabilities and other bugs in modern software systems. Greybox fuzzing can also be used in combination with a sanitizer, such as AddressSanitizer (ASAN), to further enhance the detection of certain classes of bug such as buffer overflow and use-after-free errors. However, sanitizers also introduce additional performance overheads, and this can degrade the performance of greybox fuzzing -- measured in the order of 2.36x for fuzzing with ASAN -- potentially negating the benefit of using a sanitizer in the first place. Recent research attributes this to extra overheads to additional page faults that are generated when the disjoint sanitizer metadata is accessed at runtime.
+  In this paper, we present a new design that can detect memory errors without a proliferation of page faults. The basic idea is to track memory validity using randomized tokens that are stored directly in the memory itself, rather than in disjoint metadata. All read/write operations are instrumented to check for the token, and if present, a memory error will be detected. We implement our design in the form of the ReZZan -- a sanitizer specifically optimized for fuzz testing. Since there is no disjoint metadata access, no additional page faults are generated, minimizing the performance overhead to around 1.14-1.27x (depending on the configuration).}
 }
