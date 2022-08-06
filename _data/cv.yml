@@ -9,7 +9,7 @@
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D.
+    - title: Ph.D. Candidate
       institution: National University of Singapore, Singapore
       year: 2020 - Now
       description:
@@ -30,18 +30,18 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2015
-      items:
-        - Second Place for Microsoft Imagine Cup Contest in Campus 
-    - year: 2016
-      items:
-        - Outstanding Leader of Association in Shandong Province (Awarded only one in SDU)
-        - Outstanding Undergraduate Research Assistant of SDU (Top 5%)
-        - First Prize Scholarship of Shandong University (Top 5%)
-        - Third Prize for National Software Cup Software Design Contest (Top 5%)
     - year: 2017
       items: 
         - Outstanding Graduate of Shandong Province (Top 5%)
+    - year: 2016
+      items:
+        - Outstanding Leader of Association in Shandong Province (Awarded to only one in SDU)
+        - Outstanding Undergraduate Research Assistant of SDU (Top 5%)
+        - First Prize Scholarship of Shandong University (Top 5%)
+        - Third Prize for National Software Cup Software Design Contest (Top 5%)
+    - year: 2015
+      items:
+        - Second Place for Microsoft Imagine Cup Contest in Campus 
 
 - title: Academic Interests
   type: nested_list
@@ -56,7 +56,13 @@
         - Attack and Defence.
 
 - title: Found Bugs
-  type: list
+  type: nested_list
   contents:
-    - CVE: CVE-2021-38380, CVE-2021-38381, CVE-2021-38382, CVE-2021-38383, CVE-2021-39282, CVE-2021-39283, CVE-2021-41396, CVE-2021-41397, CVE-2021-41687, CVE-2021-41688, CVE-2021-41689, CVE-2021-41690 (12 CVEs as of July 2022)
-    - Logic bugs: https://nus-test.github.io/bugs/ (53 bugs as of August 2022)
+    - title: CVEs
+      items:
+        - CVE-2021-38380, CVE-2021-38381, CVE-2021-38382, CVE-2021-38383, CVE-2021-39282, CVE-2021-39283, CVE-2021-41396, CVE-2021-41397, CVE-2021-41687, CVE-2021-41688, CVE-2021-41689, CVE-2021-41690 
+        - (12 CVEs as of July 2022)
+    - title: Logic Bugs
+      items:
+        - https://nus-test.github.io/bugs/ 
+        - (53 bugs as of August 2022)
