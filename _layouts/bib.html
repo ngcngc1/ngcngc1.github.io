@@ -88,7 +88,12 @@
           <div class="periodical">
             {{ periodical | strip }}
           </div>
-        {%- endif %}
+          {%- endif %}
+
+          <!-- Award -->
+          {% if entry.award -%}
+            {%- capture entrytype -%}<font color="#FF0000"><b>{{entry.award}}</b></font>{%- endcapture -%}
+          {%- endif %}
         
           <!-- Links/Buttons -->
           <div class="links">
