@@ -89,10 +89,10 @@
             {{ periodical | strip }}
           </div>
           {%- endif %}
-
+        
           <!-- Award -->
           {% if entry.award -%}
-            {%- capture entrytype -%}<font color="#FF0000"><b>{{entry.award}}</b></font>{%- endcapture -%}
+            {%- capture entrytype -%}<div><font color="#FF0000"><b>{{entry.award}}</b></font></div>{%- endcapture -%}
           {%- endif %}
         
           <!-- Links/Buttons -->
