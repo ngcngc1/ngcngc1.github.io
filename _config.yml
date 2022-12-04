@@ -60,7 +60,7 @@ gitlab_username: # your GitLab user name
 twitter_username: JinshengBa # your Twitter handle
 linkedin_username: jinsheng-ba-60bb72114 # your LinkedIn user name
 scholar_userid: FIirppQAAAAJ # your Google Scholar ID
-orcid_id: # your ORCID ID
+orcid_id: 0000-0003-4008-9225 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -122,6 +122,12 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  talks:
+    defaults:
+      layout: post
+    output: true
+    permalink: /talks/:path/
+
 
 news_limit: 5
 
