@@ -7,6 +7,8 @@ nav: true
 nav_order: 5
 ---
 
+<!-- pages/talks.md -->
+<div class="talks">
 <h2>Database Management Systems (64 bugs)</h2>
 <h3>CockroachDB (17 bugs)</h3>
 <details>
