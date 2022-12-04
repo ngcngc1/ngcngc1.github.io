@@ -1,6 +1,4 @@
-all: update html deploy
-deploy: bugs.html template
-	cat template bugs.html > ../_pages/outcomes.md
+all: update html
 
 html: bugs.json export.py
 	python3 export.py > bugs.html
