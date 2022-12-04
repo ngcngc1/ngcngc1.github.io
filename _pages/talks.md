@@ -4,7 +4,7 @@ permalink: /talk/
 title: Talks
 description: I welcome giving talks if you are interested in my works.
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 
 
