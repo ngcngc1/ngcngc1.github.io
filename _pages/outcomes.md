@@ -7,9 +7,9 @@ nav: true
 nav_order: 4
 ---
 
-<!-- pages/talks.md -->
-<div class="talks">
-{% if site.talks != blank -%} 
+<!-- pages/outcomes.md -->
+<div class="outcomes">
+
 <h2>Database Management Systems (64 bugs)</h2>
 <h3>CockroachDB (17 bugs)</h3>
 <details>
@@ -336,7 +336,5 @@ Status: unconfirmed<br />
 Link: <a href="https://github.com/pingcap/tidb/issues/38736">https://github.com/pingcap/tidb/issues/38736</a> <br />
 </details>
 
-{%- else -%} 
-<p>No outcome so far...</p>
-{%- endif %} 
+
 </div>
