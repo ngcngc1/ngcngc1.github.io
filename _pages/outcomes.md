@@ -15,7 +15,7 @@ nav_order: 4
     <div class="table-responsive">
     <table class="table table-sm table-borderless">
     <tr>
-        <th scope="row"><font color="#B509AC">CVE-2021-38380 </th>
+        <th scope="row">CVE-2021-38380 </th>
         <td> 
         Live555 through 1.08 mishandles huge requests for the same MP3 stream, leading to recursion and s stack-based buffer over-read. An attacker can leverage this to launch a DoS attack.
         </td>
