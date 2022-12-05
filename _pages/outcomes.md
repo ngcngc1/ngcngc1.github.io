@@ -4,7 +4,7 @@ permalink: /outcomes/
 title: Bombs
 description: The list of bugs and vulnerabilities found during my research.
 nav: true
-nav_order: 4
+nav_order: 2
 ---
 
 <!-- pages/outcomes.md -->
