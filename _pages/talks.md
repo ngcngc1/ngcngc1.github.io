@@ -2,7 +2,7 @@
 layout: page
 permalink: /talk/
 title: Talks
-description: I welcome talk invitations if you are interested in my works.
+description: #I am open to talk opportunities if you are interested in my works.
 nav: true
 nav_order: 3
 ---
