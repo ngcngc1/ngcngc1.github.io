@@ -11,7 +11,6 @@ nav_order: 4
 <div class="outcomes">
 <div class="container">
     <h2>Protocol Systems (12 CVEs)</h2>
-    <h3>Live555 </h3>
     <div class="table-responsive">
     <table class="table table-sm table-borderless">
     <tr>
@@ -21,8 +20,84 @@ nav_order: 4
         </td>
         <th>CVSS severity score: 7.5</th>
     </tr>
+    <tr>
+        <th scope="row">CVE-2021-38381 </th>
+        <td> 
+        Live555 through 1.08 does not handle MPEG-1 or 2 files properly. Sending two successive RTSP SETUP commands for the same track causes a Use-After-Free and daemon crash.
+        </td>
+        <th scope="row">CVSS severity score: 6.5</th>
+    </tr>
+    <tr>
+        <th scope="row">CVE-2021-38382 </th>
+        <td> 
+        Live555 through 1.08 does not handle Matroska and Ogg files properly. Sending two successive RTSP SETUP commands for the same track causes a Use-After-Free and daemon crash.
+        </td>
+        <th scope="row">CVSS severity score: 6.5</th>
+    </tr>
+    <tr>
+        <th scope="row">CVE-2021-38383 </th>
+        <td> 
+        OwnTone (aka owntone-server) through 28.1 has a use-after-free in net_bind() in misc.c.
+        </td>
+        <th scope="row">CVSS severity score: 9.8</th>
+    </tr>
+    <tr>
+        <th scope="row">CVE-2021-39282 </th>
+        <td> 
+        Live555 through 1.08 has a memory leak in AC3AudioStreamParser for AC3 files.
+        </td>
+        <th scope="row">CVSS severity score: 7.5</th>
+    </tr>
+    <tr>
+        <th scope="row">CVE-2021-39283 </th>
+        <td> 
+        Live555 through 1.08 allows an assertion failure and application exit via multiple SETUP and PLAY commands in liveMedia/FramedSource.cpp.
+        </td>
+        <th scope="row">CVSS severity score: 5.5</th>
+    </tr>
+    <tr>
+        <th scope="row">CVE-2021-41396 </th>
+        <td> 
+        Live555 through 1.08 does not handle socket connections properly. A huge number of incoming socket connections in a short time invokes the error-handling module, in which a heap-based buffer overflow happens. An attacker can leverage this to launch a DoS attack.
+        </td>
+        <th scope="row">CVSS severity score: 7.5</th>
+    </tr>
+    <tr>
+        <th scope="row">CVE-2021-41397 </th>
+        <td> 
+        Live555 through 1.08 does not handle MPEG data properly. Sending specific a command sequence in the MPEG stream leaks 2020 bytes once. An attacker can use this to launch a DoS attack.
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">CVE-2021-41687 </th>
+        <td> 
+        DCMTK through 3.6.6 does not handle memory free properly. The program malloc a heap memory for parsing data, but does not free it when error in parsing. Sending specific requests to the dcmqrdb program incur the memory leak. An attacker can use it to launch a DoS attack.
+        </td>
+        <th scope="row">CVSS severity score: 7.5</th>
+    </tr>
+    <tr>
+        <th scope="row">CVE-2021-41688 </th>
+        <td> 
+        DCMTK through 3.6.6 does not handle memory free properly. The object in the program is free but its address is still used in other locations. Sending specific requests to the dcmqrdb program will incur a double free. An attacker can use it to launch a DoS attack.
+        </td>
+        <th scope="row">CVSS severity score: 7.5</th>
+    </tr>
+    <tr>
+        <th scope="row">CVE-2021-41689 </th>
+        <td> 
+        DCMTK through 3.6.6 does not handle string copy properly. Sending specific requests to the dcmqrdb program, it would query its database and copy the result even if the result is null, which can incur a head-based overflow. An attacker can use it to launch a DoS attack.
+        </td>
+        <th scope="row">CVSS severity score: 7.5</th>
+    </tr>
+    <tr>
+        <th scope="row">CVE-2021-41690 </th>
+        <td> 
+        DCMTK through 3.6.6 does not handle memory free properly. The malloced memory for storing all file information are recorded in a global variable LST and are not freed properly. Sending specific requests to the dcmqrdb program can incur a memory leak. An attacker can use it to launch a DoS attack.
+        </td>
+        <th scope="row">CVSS severity score: 7.5</th>
+    </tr>
     </table>
-</div>
+    </div>
 </div>
 
 <div class="container">
