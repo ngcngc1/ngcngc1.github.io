@@ -19,68 +19,7 @@ nav_order: 4
         <td> 
         Live555 through 1.08 mishandles huge requests for the same MP3 stream, leading to recursion and s stack-based buffer over-read. An attacker can leverage this to launch a DoS attack.
         </td>
-        <th scope="row">CVSS severity score: 7.5</th>
-    </tr>
-    <tr>
-        <th scope="row"><font color="#B509AC">CVE-2021-38381 </th>
-        <td> 
-        Live555 through 1.08 does not handle MPEG-1 or 2 files properly. Sending two successive RTSP SETUP commands for the same track causes a Use-After-Free and daemon crash.
-        </td>
-    </tr>
-    <tr>
-        <th scope="row"><font color="#B509AC">CVE-2021-38382 </th>
-        <td> 
-        Live555 through 1.08 does not handle Matroska and Ogg files properly. Sending two successive RTSP SETUP commands for the same track causes a Use-After-Free and daemon crash.
-        </td>
-    </tr>
-    <tr>
-        <th scope="row"><font color="#B509AC">CVE-2021-38383 </th>
-        <td> 
-        OwnTone (aka owntone-server) through 28.1 has a use-after-free in net_bind() in misc.c.
-        </td>
-    </tr>
-    <tr>
-        <th scope="row"><font color="#B509AC">CVE-2021-39282 </th>
-        <td> 
-        Live555 through 1.08 has a memory leak in AC3AudioStreamParser for AC3 files.
-        </td>
-    </tr>
-    <tr>
-        <th scope="row"><font color="#B509AC">CVE-2021-39283 </th>
-        <td> 
-        Live555 through 1.08 allows an assertion failure and application exit via multiple SETUP and PLAY commands in liveMedia/FramedSource.cpp.
-        </td>
-    </tr>
-    <tr>
-        <th scope="row"><font color="#B509AC">CVE-2021-41396 </th>
-        <td> 
-        Live555 through 1.08 does not handle socket connections properly. A huge number of incoming socket connections in a short time invokes the error-handling module, in which a heap-based buffer overflow happens. An attacker can leverage this to launch a DoS attack.
-        </td>
-    </tr>
-    <tr>
-        <th scope="row"><font color="#B509AC">CVE-2021-41397 </th>
-        <td> 
-        </td>
-    </tr>
-    <tr>
-        <th scope="row"><font color="#B509AC">CVE-2021-41687 </th>
-        <td> 
-        </td>
-    </tr>
-    <tr>
-        <th scope="row"><font color="#B509AC">CVE-2021-41688 </th>
-        <td> 
-        </td>
-    </tr>
-    <tr>
-        <th scope="row"><font color="#B509AC">CVE-2021-41689 </th>
-        <td> 
-        </td>
-    </tr>
-    <tr>
-        <th scope="row"><font color="#B509AC">CVE-2021-41690 </th>
-        <td> 
-        </td>
+        <th>CVSS severity score: 7.5</th>
     </tr>
     </table>
 </div>
