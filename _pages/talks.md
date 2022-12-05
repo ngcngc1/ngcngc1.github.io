@@ -2,7 +2,7 @@
 layout: page
 permalink: /talk/
 title: Talks
-description: I welcome giving talks if you are interested in my works.
+description: I welcome talk invitations if you are interested in my works.
 nav: true
 nav_order: 3
 ---
@@ -28,6 +28,7 @@ nav_order: 3
         {% if item.place -%} 
             <span class="talks-place">{{ item.place }}</span>
         {%- endif %}
+        </td>
     </tr>
     {%- endfor %} 
     </table>
