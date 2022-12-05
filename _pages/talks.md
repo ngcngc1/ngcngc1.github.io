@@ -24,6 +24,10 @@ nav_order: 3
             <a class="talks-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
         {%- endif %} 
         </td>
+        <td>
+        {% if item.place -%} 
+            <span class="talks-place">{{ item.place }}</span>
+        {%- endif %}
     </tr>
     {%- endfor %} 
     </table>
