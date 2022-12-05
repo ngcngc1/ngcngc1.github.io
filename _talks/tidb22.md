@@ -5,4 +5,4 @@ place: Shanghai (Virtual), China
 inline: true
 ---
 
-TiDB industrial invited talk: Database Testing.
+TiDB seminar: Database Testing.
