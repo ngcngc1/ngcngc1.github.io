@@ -5,4 +5,4 @@ place: Singapore, Singapore
 inline: true
 ---
 
-Mayday workshop at School of Computing, National University of Singapore: Stateful Greybox Fuzzing.
+Mayday workshop at School of Computing, National University of Singapore: `Stateful Greybox Fuzzing`.

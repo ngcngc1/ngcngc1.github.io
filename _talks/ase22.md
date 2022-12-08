@@ -5,4 +5,4 @@ place: Okaland, USA
 inline: true
 ---
 
-37th IEEE/ACM International Conference on Automated Software Engineering: Efficient Greybox Fuzzing to Detect Memory Errors.
+37th IEEE/ACM International Conference on Automated Software Engineering: `Efficient Greybox Fuzzing to Detect Memory Errors`.

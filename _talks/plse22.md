@@ -5,4 +5,4 @@ place: Singapore, Singapore
 inline: true
 ---
 
-Software engineering workshop at School of Computing, National University of Singapore: Database Testing.
+Software engineering workshop at School of Computing, National University of Singapore: `Testing Database Engines via Query Plan Guidance`.

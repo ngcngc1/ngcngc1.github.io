@@ -5,4 +5,4 @@ place: Shanghai (Virtual), China
 inline: true
 ---
 
-Seminar at TiDB company: Database Testing.
+Seminar at TiDB company: `Testing Database Engines via Query Plan Guidance`.

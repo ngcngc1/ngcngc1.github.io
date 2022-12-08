@@ -5,4 +5,4 @@ place: Boston, USA
 inline: true
 ---
 
-31st USENIX Security Symposium: Stateful Greybox Fuzzing.
+31st USENIX Security Symposium: `Stateful Greybox Fuzzing`.
