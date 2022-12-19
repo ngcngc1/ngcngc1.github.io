@@ -4,4 +4,4 @@ date: 2022-12-09
 inline: true
 ---
 
-Our paper `Testing Database Engines via Query Plan Guidance` is accepted by ICSE'23!
+Our paper `Testing Database Engines via Query Plan Guidance` was accepted at ICSE'23!
