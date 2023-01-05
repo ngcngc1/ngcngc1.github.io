@@ -1,13 +1,16 @@
 ---
 layout: page
 title: Submenus
-nav: false
-nav_order: 5
+nav: true
+nav_order: 4
 dropdown: true
 children: 
-    - title: publications
-      permalink: /publications/
+    - title: Awards
+      permalink: /awards/
     - title: divider
-    - title: projects
-      permalink: /projects/
+    - title: Services
+      permalink: /services/
+    - title: divider
+    - title: CV
+      permalink: /cv/
 ---
