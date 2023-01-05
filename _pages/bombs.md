@@ -1,14 +1,14 @@
 ---
 layout: page
-permalink: /outcomes/
+permalink: /bombs/
 title: Bombs
 description: The list of bugs and vulnerabilities found during my research.
 nav: true
 nav_order: 2
 ---
 
-<!-- pages/outcomes.md -->
-<div class="outcomes">
+<!-- pages/bombs.md -->
+<div class="bombs">
 <div class="container">
     <h2>Protocol Systems (12 CVEs)</h2>
     <div class="table-responsive">
