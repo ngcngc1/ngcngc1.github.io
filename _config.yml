@@ -127,6 +127,16 @@ collections:
       layout: post
     output: true
     permalink: /talks/:path/
+  awards:
+    defaults:
+      layout: post
+    output: true
+    permalink: /awards/:path/
+  services:
+    defaults:
+      layout: post
+    output: true
+    permalink: /services/:path/
 
 
 news_limit: 5
