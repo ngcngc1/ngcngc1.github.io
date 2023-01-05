@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-11-14
-place: Singapore
+place: Singapore, Singapore
 inline: true
 ---
 
