@@ -5,4 +5,4 @@ place: Singapore
 inline: true
 ---
 
-`Research Achievement Award` from School of Computing.
+`Research Achievement Award` from NUS School of Computing.

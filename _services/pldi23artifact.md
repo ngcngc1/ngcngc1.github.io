@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2023-03-11
-place: Singapore
+place: Online
 inline: true
 ---
 
