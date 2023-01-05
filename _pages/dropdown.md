@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Submenus
-nav: true
-nav_order: 4
+nav: false
+nav_order: 8
 dropdown: true
 children: 
     - title: Awards
