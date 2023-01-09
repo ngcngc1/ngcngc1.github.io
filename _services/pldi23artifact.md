@@ -5,4 +5,4 @@ place: Online
 inline: true
 ---
 
-Program Committee for PLDI 2023 Artifact Evaluation.
+Program Committee for PLDI'23 Artifact Evaluation.
