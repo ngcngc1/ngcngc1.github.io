@@ -1,7 +1,7 @@
 ## Utilities to generate the list of vulnerabilities
 
 ```
-export GITHUB_LAB_TOKEN_...
+export GITHUB_LAB_TOKEN=...
 make
 ```
 
