@@ -15,7 +15,7 @@ nav_order: 6
     {%- assign teaching = site.teaching | reverse -%} 
     {% for item in teaching %} 
     <tr>
-        <th scope="row">{{ item.date }}</th>
+        <th scope="row">{{ item.sem }}</th>
         <td>
         {% if item.inline -%} 
             {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
