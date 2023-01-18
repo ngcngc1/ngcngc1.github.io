@@ -194,10 +194,6 @@ nav_order: 2
 			Link: <a href="https://sqlite.org/forum/forumpost/c06b10ad7e">https://sqlite.org/forum/forumpost/c06b10ad7e</a> <br />
 		</details>
 		<details>
-			<summary>Null value returned by TOTAL</summary>
-			Link: <a href="https://sqlite.org/forum/forumpost/c4c4fcff3d">https://sqlite.org/forum/forumpost/c4c4fcff3d</a> <br />
-		</details>
-		<details>
 			<summary>Expression or Constant in GroupBy Clause</summary>
 			Link: <a href="https://sqlite.org/forum/forumpost/2458c5dea2">https://sqlite.org/forum/forumpost/2458c5dea2</a> <br />
 		</details>

@@ -398,15 +398,6 @@
         "resolution": "fixed"
     },
     {
-        "url": "https://sqlite.org/forum/forumpost/c4c4fcff3d",
-        "title": "Null value returned by TOTAL",
-        "created_at": "15/05/2022",
-        "reported_by": "bajinsheng",
-        "domain": "dbms",
-        "system": "SQLite",
-        "resolution": "not a bug"
-    },
-    {
         "url": "https://sqlite.org/forum/forumpost/2458c5dea2",
         "title": "Expression or Constant in GroupBy Clause",
         "created_at": "17/05/2022",
