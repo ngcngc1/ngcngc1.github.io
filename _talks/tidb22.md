@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-11-07
-place: Shanghai (Virtual), China
+place: Shanghai, China
 inline: true
 ---
 
