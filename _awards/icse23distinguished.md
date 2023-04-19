@@ -5,4 +5,4 @@ place: Melbourn, Australia
 inline: true
 ---
 
-`ACM SIGSOFT Distinguished Paper Award` from ICSE'23.
+`ACM SIGSOFT Distinguished Paper Award` from [ICSE'23](https://conf.researchr.org/info/icse-2023/awards).
