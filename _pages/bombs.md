@@ -101,8 +101,8 @@ nav_order: 2
 </div>
 
 <div class="container">
-	<h2>Database Management Systems (66 bugs)</h2>
-	<h3>CockroachDB (18 bugs)</h3>
+	<h2>Database Management Systems (92 bugs)</h2>
+	<h3>CockroachDB (25 bugs)</h3>
 		<details>
 			<summary>sql: support SCRUB on temp tables</summary>
 			Link: <a href="https://github.com/cockroachdb/cockroach/issues/83770">https://github.com/cockroachdb/cockroach/issues/83770</a> <br />
@@ -175,12 +175,57 @@ nav_order: 2
 			<summary>ERROR: internal error: expected *DInt, found tree.dNull</summary>
 			Link: <a href="https://github.com/cockroachdb/cockroach/issues/94264">https://github.com/cockroachdb/cockroach/issues/94264</a> <br />
 		</details>
+		<details>
+			<summary>An Unexpected Error in `CROSS MERGE JOIN`</summary>
+			Link: <a href="https://github.com/cockroachdb/cockroach/issues/88104">https://github.com/cockroachdb/cockroach/issues/88104</a> <br />
+		</details>
+		<details>
+			<summary>Potential Issue for Estimated Rows</summary>
+			Link: <a href="https://github.com/cockroachdb/cockroach/issues/88455">https://github.com/cockroachdb/cockroach/issues/88455</a> <br />
+		</details>
+		<details>
+			<summary>An Issue of Estimated Rows</summary>
+			Link: <a href="https://github.com/cockroachdb/cockroach/issues/89161">https://github.com/cockroachdb/cockroach/issues/89161</a> <br />
+		</details>
+		<details>
+			<summary>Unexpected Estimated Rows in `HAVING` clause</summary>
+			Link: <a href="https://github.com/cockroachdb/cockroach/issues/89462">https://github.com/cockroachdb/cockroach/issues/89462</a> <br />
+		</details>
+		<details>
+			<summary>Suspicious Estimated Rows by `OR` </summary>
+			Link: <a href="https://github.com/cockroachdb/cockroach/issues/90112">https://github.com/cockroachdb/cockroach/issues/90112</a> <br />
+		</details>
+		<details>
+			<summary>Suspicious Estimated Rows by `DISTINCT`</summary>
+			Link: <a href="https://github.com/cockroachdb/cockroach/issues/90113">https://github.com/cockroachdb/cockroach/issues/90113</a> <br />
+		</details>
+		<details>
+			<summary>ERROR: internal error: expected *DInt, found tree.dNull</summary>
+			Link: <a href="https://github.com/cockroachdb/cockroach/issues/94264">https://github.com/cockroachdb/cockroach/issues/94264</a> <br />
+		</details>
 	<h3>DuckDB (1 bugs)</h3>
 		<details>
 			<summary>Crash When Creating Index</summary>
 			Link: <a href="https://github.com/duckdb/duckdb/issues/4976">https://github.com/duckdb/duckdb/issues/4976</a> <br />
 		</details>
-	<h3>SQLite (29 bugs)</h3>
+	<h3>MySQL (4 bugs)</h3>
+		<details>
+			<summary>Suspicious Estimated Rows</summary>
+			Link: <a href="https://bugs.mysql.com/bug.php?id=108833">https://bugs.mysql.com/bug.php?id=108833</a> <br />
+		</details>
+		<details>
+			<summary>Suspicious Estimated Rows by JOIN</summary>
+			Link: <a href="https://bugs.mysql.com/bug.php?id=108851">https://bugs.mysql.com/bug.php?id=108851</a> <br />
+		</details>
+		<details>
+			<summary>Suspicious Estimated Rows by DISTINCTROW</summary>
+			Link: <a href="https://bugs.mysql.com/bug.php?id=108852">https://bugs.mysql.com/bug.php?id=108852</a> <br />
+		</details>
+		<details>
+			<summary>Unexpected Error: Memory capacity exceeded</summary>
+			Link: <a href="https://bugs.mysql.com/bug.php?id=111471">https://bugs.mysql.com/bug.php?id=111471</a> <br />
+		</details>
+	<h3>SQLite (28 bugs)</h3>
 		<details>
 			<summary>An Inconsistent Result Depending on Parenthesization</summary>
 			Link: <a href="https://sqlite.org/forum/forumpost/af3d07f908">https://sqlite.org/forum/forumpost/af3d07f908</a> <br />
@@ -293,7 +338,7 @@ nav_order: 2
 			<summary>Assertion `pRec->nField>0 && pRec->nField<=pIdx->nSampleCol' failed.</summary>
 			Link: <a href="https://sqlite.org/forum/forumpost/3607259d3c">https://sqlite.org/forum/forumpost/3607259d3c</a> <br />
 		</details>
-	<h3>TiDB (18 bugs)</h3>
+	<h3>TiDB (34 bugs)</h3>
 		<details>
 			<summary>incorrect unresolved column when using natural join</summary>
 			Link: <a href="https://github.com/pingcap/tidb/issues/35522">https://github.com/pingcap/tidb/issues/35522</a> <br />
@@ -366,6 +411,68 @@ nav_order: 2
 			<summary>rule PredicatePushDown pushes wrong filter across projection</summary>
 			Link: <a href="https://github.com/pingcap/tidb/issues/38736">https://github.com/pingcap/tidb/issues/38736</a> <br />
 		</details>
-</div>
-
+		<details>
+			<summary>ERROR 8141 (HY000): assertion failed</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38295">https://github.com/pingcap/tidb/issues/38295</a> <br />
+		</details>
+		<details>
+			<summary>Incorrect Results by `REGEXP`</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38303">https://github.com/pingcap/tidb/issues/38303</a> <br />
+		</details>
+		<details>
+			<summary>Incorrect Result by `LEFT JOIN`</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38304">https://github.com/pingcap/tidb/issues/38304</a> <br />
+		</details>
+		<details>
+			<summary>runtime error: invalid memory address or nil pointer dereference</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38305">https://github.com/pingcap/tidb/issues/38305</a> <br />
+		</details>
+		<details>
+			<summary>Unexpected Results</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38310">https://github.com/pingcap/tidb/issues/38310</a> <br />
+		</details>
+		<details>
+			<summary>Unexpected Estimated Rows of `OR`</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38319">https://github.com/pingcap/tidb/issues/38319</a> <br />
+		</details>
+		<details>
+			<summary>Error [types:1690]%s value is out of range in '%s'</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38352">https://github.com/pingcap/tidb/issues/38352</a> <br />
+		</details>
+		<details>
+			<summary>Question About the Estimated Rows in `GROUP BY`</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38474">https://github.com/pingcap/tidb/issues/38474</a> <br />
+		</details>
+		<details>
+			<summary>Suspicious Estimated Rows by `JOIN`</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38479">https://github.com/pingcap/tidb/issues/38479</a> <br />
+		</details>
+		<details>
+			<summary>Suspicious Estimated Rows by HAVING</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38482">https://github.com/pingcap/tidb/issues/38482</a> <br />
+		</details>
+		<details>
+			<summary>Unexpected Error: Failed to read auto-increment value from storage engine</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38483">https://github.com/pingcap/tidb/issues/38483</a> <br />
+		</details>
+		<details>
+			<summary>Unexpected Results by RIGHT JOIN</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38654">https://github.com/pingcap/tidb/issues/38654</a> <br />
+		</details>
+		<details>
+			<summary>Unexpected Estimated Rows by INNER JOIN</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38665">https://github.com/pingcap/tidb/issues/38665</a> <br />
+		</details>
+		<details>
+			<summary>Unexpected Estimated Rows by WHERE clause</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38721">https://github.com/pingcap/tidb/issues/38721</a> <br />
+		</details>
+		<details>
+			<summary>rule PredicatePushDown pushes wrong filter across projection</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/38736">https://github.com/pingcap/tidb/issues/38736</a> <br />
+		</details>
+		<details>
+			<summary>runtime error: index out of range [7] with length 4</summary>
+			Link: <a href="https://github.com/pingcap/tidb/issues/44747">https://github.com/pingcap/tidb/issues/44747</a> <br />
+		</details>
 </div>
