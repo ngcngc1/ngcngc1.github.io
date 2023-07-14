@@ -5,4 +5,4 @@ place: Shanghai, China
 inline: true
 ---
 
-Talk to the reearch group of [Ting Su](http://tingsu.github.io/) at East China Normal University: `Efficient Greybox Fuzzing to Detect Memory Errors`.
+Visiting [Ting Su](http://tingsu.github.io/)'s group at East China Normal University: `Efficient Greybox Fuzzing to Detect Memory Errors`.
