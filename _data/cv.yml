@@ -10,7 +10,7 @@
   type: time_table
   contents:
     - title: Ph.D. 
-      institution: Tsinghua University, Singapore
+      institution: Tsinghua University, China
       year: 2017-2021
       description:
         - Biomedical Engineering.
@@ -18,7 +18,7 @@
       institution: Northeastern University, China
       year: 2011-2017
       description:
-        - Biomedical Engineering.
+        - Biomedical Engineering (Top Class).
 
 - title: Work Experience
   type: time_table
@@ -28,8 +28,8 @@
       year: 2023 - Now
       description:
         - Biomedical Engineering.
-    - title: Assistant Professor
-      institution: Assistant Research Fellow
+    - title: Assistant Research Fellow
+      institution: Department of Biomedical Engineering, Tsinghua University
       year: 2021 - 2023
       description:
         - Biomedical Engineering.
