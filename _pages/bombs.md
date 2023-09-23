@@ -3,7 +3,7 @@ layout: page
 permalink: /bombs/
 title: Bombs
 description: The list of bugs and vulnerabilities found during my research.
-nav: true
+nav: false
 nav_order: 2
 ---
 
