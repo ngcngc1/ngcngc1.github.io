@@ -228,8 +228,8 @@ jekyll-archives:
 
 scholar:
 
-  last_name: Ning
-  first_name: Guochen
+  last_name: [Ning]
+  first_name: [Guochen]
 
   style: apa
   locale: en
