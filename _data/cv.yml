@@ -6,40 +6,33 @@
     - name: Languages
       value: English, Chinese
 
-- title: Experience
+- title: Education
   type: time_table
   contents:
-    - title: Assistant Professor, Principal Investigator
+    - title: Ph.D. 
+      institution: Tsinghua University, Singapore
+      year: 2017-2021
+      description:
+        - Biomedical Engineering.
+    - title: B.Eng., MA.Sc.
+      institution: Northeastern University, China
+      year: 2013-2017
+      description:
+        - Biomedical Engineering.
+
+- title: Work Experience
+  type: time_table
+  contents:
+    - title: Assistant Professor
       institution: School of Clinical Medicine, Tsinghua University
       year: 2023 - Now
       description:
         - Biomedical Engineering.
-    - title: Assistant Research Fellow
-      institution: Department of Biomedical Engineering, Tsinghua University
-      year: 2021-2023
+    - title: Assistant Professor
+      institution: Assistant Research Fellow
+      year: 2021 - 2023
       description:
         - Biomedical Engineering.
-
-- title: Education
-  type: time_table
-  contents:
-    - title: Ph.D.
-      institution: Tsinghua University, China
-      year: 2017 - 2021
-      description:
-        - Biomedical Engineering.
-    - title: MA.Sc & B.E.
-      institution: Northeastern University, China
-      year: 2011 - 2017
-      description:
-        - Top Class, Biomedical Engineering.
-    
-- title: Work Experience
-  type: time_table
-  contents:
-    - title: Security Engineer
-      institution: Huawei, China
-      year: 2017-2019
 
 - title: Academic Interests
   type: nested_list
@@ -52,7 +45,5 @@
       items:
         - Reinfrocement Learning.
         - Imitation learning.
-    - title: Scene Perception.
-      items:
         - Representation learning.
         - Medical image processing.
