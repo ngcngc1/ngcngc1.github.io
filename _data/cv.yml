@@ -2,24 +2,38 @@
   type: map
   contents:
     - name: Full Name
-      value: Jinsheng Ba
+      value: Guochen Ning
     - name: Languages
       value: English, Chinese
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Assistant Professor, Principal Investigator
+      institution: School of Clinical Medicine, Tsinghua University
+      year: 2023 - Now
+      description:
+        - Biomedical Engineering.
+    - title: Assistant Research Fellow
+      institution: Department of Biomedical Engineering, Tsinghua University
+      year: 2021-2023
+      description:
+        - Biomedical Engineering.
 
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. Candidate
-      institution: National University of Singapore, Singapore
-      year: 2020 - Now
+    - title: Ph.D.
+      institution: Tsinghua University, China
+      year: 2017 - 2021
       description:
-        - Software security. Fuzzing.
-    - title: B.Eng.
-      institution: Shandong University, China
-      year: 2013-2017
+        - Biomedical Engineering.
+    - title: MA.Sc & B.E.
+      institution: Northeastern University, China
+      year: 2011 - 2017
       description:
-        - Computer Science and Technology.
-
+        - Top Class, Biomedical Engineering.
+    
 - title: Work Experience
   type: time_table
   contents:
@@ -27,43 +41,18 @@
       institution: Huawei, China
       year: 2017-2019
 
-#- title: Vulnerabilities Found
-#  type: nested_list
-#  contents:
-#    - title: CVEs
-#      items:
-#        - CVE-2021-38380, CVE-2021-38381, CVE-2021-38382, CVE-2021-38383, CVE-2021-39282, CVE-2021-39283, CVE-2021-41396, CVE-2021-41397, CVE-2021-41687, CVE-2021-41688, CVE-2021-41689, CVE-2021-41690 
-#        - (12 CVEs as of July 2022)
-#    - title: Bugs
-#      items:
-#        - Please see full list from <a href="https://nus-test.github.io/bugs/">nus-test.github.io/bugs</a>
-#        - (53 bugs as of August 2022)
-
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Software Testing.
+    - title: Medical robots.
       items: 
-        - Fuzzing.
-    - title: System Security.
+        - Robotic Ultrasound Systems.
+        - Respiratory Intervention Robot.
+    - title: Robot Learning.
       items:
-        - Reverse Engineering.
-        - Malware Detection.
-        - Attack and Defence.
-        
-- title: Honors Before Ph.D.
-  type: time_table
-  contents:
-    - year: 2017
-      items: 
-        - Outstanding Graduate of Shandong Province (Top 5%)
-    - year: 2016
+        - Reinfrocement Learning.
+        - Imitation learning.
+    - title: Scene Perception.
       items:
-        - Outstanding Leader of Association in Shandong Province (Awarded to only one in SDU)
-        - Outstanding Undergraduate Research Assistant of SDU (Top 5%)
-        - First Prize Scholarship of Shandong University (Top 5%)
-        - Third Prize for National Software Cup Software Design Contest (Top 5%)
-    - year: 2015
-      items:
-        - Second Place for Microsoft Imagine Cup Contest in Campus 
-
+        - Representation learning.
+        - Medical image processing.
