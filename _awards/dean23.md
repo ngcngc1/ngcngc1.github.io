@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-08-10
-place: Singapore, Singapore
+date: 2021-06
+place: Beijing, China
 inline: true
 ---
 
-`Dean's Graduate Research Excellence Award` from [NUS School of Computing](https://www.comp.nus.edu.sg/programmes/pg/awards/deans/).
+`Outstanding Doctorial Dissertation Award` from [Tsinghua University].
