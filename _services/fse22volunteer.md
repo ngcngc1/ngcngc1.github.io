@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2022-11-14
-place: Singapore, Singapore
+date: 2023-07
+place: Suzhou, China
 inline: true
 ---
 
-Student volunteer for FSE'22.
+Organizer Committee in The 19th Asian Conference on Computer Aided Surgery
