@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-02-24
-place: Melbourn, Australia
+date: 2021-06
+place: Beijing, China
 inline: true
 ---
 
-`ACM SIGSOFT Distinguished Paper Award` from [ICSE'23](https://conf.researchr.org/info/icse-2023/awards).
+`Outstanding Graduates Award` from [Tsinghua University].
