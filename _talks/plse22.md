@@ -1,8 +1,10 @@
 ---
 layout: post
-date: 2022-11-04
-place: Singapore, Singapore
+date: 2017-2019
+place: MOST
 inline: true
 ---
 
-Software engineering workshop at School of Computing, National University of Singapore: `Testing Database Engines via Query Plan Guidance`.
+`Investigator	`.
+The National Key Research and Development Program of China (2017YFC0108000), RMB ¥ 5,980,000
+Frontier Research on Integrated Minimally Invasive Precision Diagnosis and Treatment for Orthopedic Surgery based on Augmented Reality
