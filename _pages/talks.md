@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /talk/
-title: Talks
-description: #I am open to talk opportunities if you are interested in my works.
+title: Fundings
+description: 
 nav: true
 nav_order: 3
 ---
