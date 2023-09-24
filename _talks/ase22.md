@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2022-10-11
-place: Okaland, USA
+date: 2023-2025
+place: NSFC
 inline: true
 ---
-
-37th IEEE/ACM International Conference on Automated Software Engineering: `Efficient Greybox Fuzzing to Detect Memory Errors`.
+`Principal Investigator	`.
+National Natural Science Foundation of China (62201315), RMB ¥ 300,000
+Research on autonomous information perception and decision-making methods for robotic ultrasound imaging.
