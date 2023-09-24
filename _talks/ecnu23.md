@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2023-07-04
-place: Shanghai, China
+date: 2021-2023
+place: CPSF
 inline: true
 ---
 
-Visiting [Ting Su](http://tingsu.github.io/)'s group at East China Normal University: `Efficient Greybox Fuzzing to Detect Memory Errors`.
+`Principal Investigator	`.
+‘Tsinghua Huiyan’ Talent Foundation of Tsinghua University , RMB ¥ 600,000
