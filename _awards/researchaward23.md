@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-01-05
-place: Singapore, Singapore
+date: 2019-11
+place: Tokyo, Japan
 inline: true
 ---
 
-`Research Achievement Award` from [NUS School of Computing](https://www.comp.nus.edu.sg/programmes/pg/awards/deans/).
+`Excellent Paper Award` from [The 15th Asian Conference on Computer-Aided Surgery].
