@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2023-07-20
-place: Online
+place: London, UK
 inline: true
 ---
 
-Program Committee for [FSE'23 Artifact Evaluation](https://2023.esec-fse.org/track/fse-2023-artifacts).
+Organizer Assistant in  ICRA2023 Workshop ICRA-RAMI(https://sites.google.com/view/rami-icra-2023-workshop/home)(Robot-Assisted Medical Imaging) 
