@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Dr. Ning is currently an Assistant Professor and a Principal Investigato (PI) at Tsinghua University.
+Dr. Ning (宁国琛) is currently an Assistant Professor and a Principal Investigato (PI) at Tsinghua University.
 
 His research interests encompass structural design and autonomous control of medical robots, with a particular emphasis on intelligence. 
 He also concentrates on research areas involving robot learning and the intersection of robotics and artificial intelligence (AI). The systems he is actively engaged with include ultrasound robots, respiratory intervention robots, and ophthalmic robots. 
