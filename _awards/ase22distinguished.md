@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-7
-place: Suzhou, China
+date: 2022-07-01
+place: Online
 inline: true
 ---
 
