@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2023-2025
+date: 2023
 place: NSFC
 inline: true
 ---
