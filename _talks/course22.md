@@ -1,8 +1,10 @@
 ---
 layout: post
-date: 2022-11-08
-place: Singapore, Singapore
+date: 2021-2023
+place: CPSF
 inline: true
 ---
 
-Guest presentation at [CS6218:Principles of Prog. Languages & Software Engineering](https://manuelrigger.at/teaching/CS6218/): `Testing Database Engines via Query Plan Guidance`.
+`Principal Investigator	`.
+China Postdoctoral Science Foundation (2021M701928), RMB ¥ 80,000
+ Research on the control method and system of a fully autonomous ultrasonic diagnostic robot.
