@@ -16,7 +16,7 @@ nav_order: 3
     {%- assign talks = site.talks | reverse -%} 
     {% for item in talks %} 
     <tr>
-        <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
+        <th scope="row">{{ item.date | date: "%Y" }}</th>
         <td>
         {% if item.inline -%} 
             {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
