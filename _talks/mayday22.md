@@ -1,8 +1,10 @@
 ---
 layout: post
-date: 2022-05-31
-place: Singapore, Singapore
+date: 2021-2025
+place: NSFC
 inline: true
 ---
 
-Mayday workshop at School of Computing, National University of Singapore: `Stateful Greybox Fuzzing`.
+`Investigator	`.
+National Natural Science Foundation of China (82027807)，RMB ¥ 7,310,000
+Integrated Minimally Invasive Diagnosis and Treatment Device for Intelligent Precision Hepatobiliary Pancreas Surgery
