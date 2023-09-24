@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2021-01-01
-place: CPSF
+place: THU
 inline: true
 ---
 
