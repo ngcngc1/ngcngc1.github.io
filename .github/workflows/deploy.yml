@@ -1,49 +1,67 @@
-name: CI  
+name: deploy
 
-on:  
-  push:  
-    branches:  
-      - master  
-      - main  
-  pull_request:  
-    branches:  
-      - master  
-      - main  
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
 
-jobs:  
-  build:  
-    runs-on: ubuntu-latest  
+permissions:
+  contents: write # 允许推送到 gh-pages
 
-    steps:  
-      - name: Checkout code  
-        uses: actions/checkout@v3  
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-      - name: Setup Ruby  
-        uses: ruby/setup-ruby@v1  
-        with:  
-          ruby-version: '3.0.2'  
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Enable bundler cache  
-        uses: actions/cache@v3  
-        with:  
-          path: vendor/bundle  
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}  
-          restore-keys: |  
-            ${{ runner.os }}-gems-  
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0.2'
 
-      - name: Install deps  
-        run: |  
-          gem install bundler  
-          bundle config path vendor/bundle  
-          bundle install --jobs 4 --retry 3  
-          npm install -g mermaid.cli  
+      - name: Enable bundler cache
+        uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}-${{ hashFiles('.ruby-version') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
 
-      - name: Upload Artifact  # 更改为v2版本的上传操作  
-        uses: actions/upload-artifact@v2  
-        with:  
-          name: my-artifact  
-          path: ./path/to/artifact  # 替换为您实际的文件路径  
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+          npm install -g @mermaid-js/mermaid-cli
 
-      - name: Deploy website  
-        run: |  
-          yes | bash bin/deploy --verbose $NO_PUSH --src $SRC_BRANCH --deploy $DEPLOY_BRANCH  
+      - name: Setup deploy environment
+        id: setup
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 设置源码分支
+          if [[ "${GITHUB_REF}" == refs/pull/*/merge ]]; then
+            echo "SRC_BRANCH=${GITHUB_HEAD_REF}" >> $GITHUB_ENV
+            echo "NO_PUSH=--no-push" >> $GITHUB_ENV
+          elif [[ "${GITHUB_REF}" == refs/heads/* ]]; then
+            echo "SRC_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
+            echo "NO_PUSH=" >> $GITHUB_ENV
+          else
+            echo "SRC_BRANCH=unknown" >> $GITHUB_ENV
+            echo "NO_PUSH=--no-push" >> $GITHUB_ENV
+          fi
+
+          echo "DEPLOY_BRANCH=gh-pages" >> $GITHUB_ENV
+
+      - name: Deploy website
+        run: |
+          echo "Deploying from $SRC_BRANCH to $DEPLOY_BRANCH"
+          bash bin/deploy --verbose $NO_PUSH --src "$SRC_BRANCH" --deploy "$DEPLOY_BRANCH"
