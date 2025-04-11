@@ -52,4 +52,10 @@ jobs:
       
       - name: Deploy website   
         run: |  
+          echo "SRC_BRANCH is $SRC_BRANCH"  
+          echo "Deploying to branch $DEPLOY_BRANCH"  
           yes | bash bin/deploy --verbose $NO_PUSH --src $SRC_BRANCH --deploy $DEPLOY_BRANCH  
+          if [ $? -ne 0 ]; then  
+            echo "Deployment failed"  
+            exit 1  
+          fi  
