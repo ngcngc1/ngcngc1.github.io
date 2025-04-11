@@ -1,4 +1,4 @@
-name: deploy  
+name: CI  
 
 on:  
   push:  
@@ -11,17 +11,18 @@ on:
       - main  
 
 jobs:  
-  deploy:  
+  build:  
     runs-on: ubuntu-latest  
+
     steps:  
       - name: Checkout code  
         uses: actions/checkout@v3  
-      
+
       - name: Setup Ruby  
         uses: ruby/setup-ruby@v1  
         with:  
           ruby-version: '3.0.2'  
-      
+
       - name: Enable bundler cache  
         uses: actions/cache@v3  
         with:  
@@ -29,33 +30,20 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}  
           restore-keys: |  
             ${{ runner.os }}-gems-  
-      
+
       - name: Install deps  
         run: |  
           gem install bundler  
           bundle config path vendor/bundle  
           bundle install --jobs 4 --retry 3  
           npm install -g mermaid.cli  
-      
-      - name: Setup deploy options  
-        id: setup  
+
+      - name: Upload Artifact  # 更改为v2版本的上传操作  
+        uses: actions/upload-artifact@v2  
+        with:  
+          name: my-artifact  
+          path: ./path/to/artifact  # 替换为您实际的文件路径  
+
+      - name: Deploy website  
         run: |  
-          git config --global user.name "GitHub Action"  
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"  
-          if [[ ${GITHUB_REF} == refs/pull/*/merge ]]; then # pull request  
-            echo "SRC_BRANCH=${GITHUB_HEAD_REF}" >> $GITHUB_ENV  
-            echo "NO_PUSH=--no-push" >> $GITHUB_ENV  
-          elif [[ ${GITHUB_REF} == refs/heads/* ]]; then # branch, e.g. master, source etc  
-            echo "SRC_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV  
-          fi  
-          echo "DEPLOY_BRANCH=gh-pages" >> $GITHUB_ENV  
-      
-      - name: Deploy website   
-        run: |  
-          echo "SRC_BRANCH is $SRC_BRANCH"  
-          echo "Deploying to branch $DEPLOY_BRANCH"  
           yes | bash bin/deploy --verbose $NO_PUSH --src $SRC_BRANCH --deploy $DEPLOY_BRANCH  
-          if [ $? -ne 0 ]; then  
-            echo "Deployment failed"  
-            exit 1  
-          fi  
